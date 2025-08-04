@@ -1,0 +1,4 @@
+#Dependencias que no se deben subir al repositorio
+
+node_modules/
+packge-lock.json
