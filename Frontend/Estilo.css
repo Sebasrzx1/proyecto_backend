@@ -1,3 +1,7 @@
+body, html{
+  margin-bottom: 0;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -26,12 +30,26 @@ nav p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 2px;
   text-decoration: underline;
-  
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(139, 0, 86);
+  padding: 30px;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
 }
 .input {
   display: flex;
   gap: 5px;
   font-family: "Courier New", Courier, monospace;
+}
+input{
+  border-radius: 10px;
+  width: 240px;
+  padding-left: 10px;
+  border: 1px solid;
 }
 .input input:focus {
   box-shadow: 0 0 20px 5px red;
@@ -48,10 +66,12 @@ nav p {
 #btn-guardar:hover {
   transform: scale(1.2);
   transition: 0.4s;
+  box-shadow: 0 0 20px 5px rgb(0, 218, 0);
 }
 #btn-cancelar:hover {
   transform: scale(1.2);
   transition: 0.4s;
+  box-shadow: 0 0 20px 5px rgb(233, 0, 0);
 }
 #btn-cancelar {
   border-radius: 5px;
@@ -79,6 +99,8 @@ nav p {
   border: 2px solid white;
   box-shadow: 0 0 20px 10px rgb(83, 172, 255);
   transition: 0.4s;
+  gap:10px;
+  width: 130px;
 }
 .card_equipos:hover {
   transform: scale(1.1);
@@ -115,8 +137,18 @@ nav p {
   transition: 0.4s;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(101, 155, 255);
+  color: white;
+  padding: 20px;
+
+}
+
 :root {
-  --bg: #0f172a; /* color de fondo */
+  --bg: #0f282a; /* color de fondo */
   --ball-size: 120px; /* tamaño del balón */
   --ball-shade: #d9d9d9; /* tono del balón */
 }

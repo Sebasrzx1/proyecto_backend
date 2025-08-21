@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Estilo.css" />
     <title>Equipos de fútbol</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h1>Bienvenidos al mundial de futbol</h1>
-        <p>Aqui encontraras algunos nombres de equipos clasificados en el mundial</p>
+      <h1>Bienvenidos al mundial de futbol</h1>
+      <p>
+        Aqui encontraras algunos nombres de equipos clasificados en el mundial
+      </p>
     </nav>
-    
-    <h2 class="titulo2">Equipos Clasificados en el mundial</h2>
+
     <form id="datoform">
-        <input type="hidden" id="id_equipo">
+      <h2 class="titulo2">Equipos Clasificados en el mundial</h2>
+      <input type="hidden" id="id_equipo" />
 
-        <div class="input">
-            <label for="">Nombre de equipo: </label>
-            <input type="text" id="nombre" required placeholder="Digite el nombre de equipo">
-        </div>
+      <div class="input">
+        <label for="">Nombre de equipo: </label>
+        <input type="text" id="nombre" required placeholder="Digite el nombre de equipo"/>
+      </div><br>
 
-    <!--Botones-->
-    <div class="botonesGyC">
+      <!--Botones-->
+      <div class="botonesGyC">
         <button type="submit" id="btn-guardar">Guardar</button>
         <button type="button" id="btn-cancelar">Cancelar</button>
-    </div>
+      </div>
     </form>
 
-
     <!--Contenedor tipo plantilla para renderizar los equipos-->
-    <div id="contendorcards" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;"></div>
+    <div
+      id="contendorcards"
+      style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px"
+    ></div>
 
     <!--Plantilla de renderizado-->
     <template id="templatecard">
-
-        <div class="card_equipos">
-            <h3 class="nombreequipo"></h3>
-            <button class="btn-editar">Editar</button>
-            <button class="btn-eliminar">Eliminar</button>
-        </div>
-
+      <div class="card_equipos">
+        <h3 class="nombreequipo"></h3>
+        <button class="btn-editar">Editar</button>
+        <button class="btn-eliminar">Eliminar</button>
+      </div>
     </template>
 
-
+    <footer> Todos los derechos reservados ®2025</footer>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
